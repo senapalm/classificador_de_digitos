@@ -1,7 +1,22 @@
+# Documentos
 *.pdf
 *.docx
+
+# Python
 __pycache__/
 *.pyc
-.env
+
+# Ambiente virtual
+.venv/
+
+# VS Code
 .vscode/
+
+# Saídas geradas
 outputs/
+
+# Dataset/cache bruto
+data/raw/
+
+# Jupyter
+.ipynb_checkpoints/

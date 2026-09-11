@@ -255,3 +255,31 @@ O projeto demonstrou o desenvolvimento de um pipeline completo de classificaçã
 Entre os algoritmos avaliados, a MLP apresentou o melhor desempenho, atingindo aproximadamente 97,8% de acurácia no conjunto de teste.
 
 Os experimentos OOD também evidenciaram uma limitação importante: modelos classificadores podem apresentar elevada confiança mesmo diante de classes desconhecidas. Dessa forma, além das métricas tradicionais, a análise de erros, robustez e comportamento diante de dados externos é fundamental para compreender as limitações de uma solução de Machine Learning.
+
+## Funcionalidade bônus — classificação de imagem local
+
+Como recurso adicional, o projeto permite utilizar o modelo MLP para classificar uma única imagem armazenada localmente no computador.
+
+A funcionalidade abre uma janela para seleção de um arquivo nos formatos `.png`, `.jpg` ou `.jpeg`. Depois da seleção, a imagem passa pelo mesmo pipeline de pré-processamento aplicado às imagens externas:
+
+1. conversão para escala de cinza;
+2. ajuste do fundo e inversão das cores, quando necessária;
+3. binarização da imagem;
+4. identificação da região ocupada pelo dígito;
+5. recorte e remoção do fundo;
+6. redimensionamento proporcional;
+7. inserção em uma matriz de 28 × 28 pixels;
+8. centralização pelo centro de massa;
+9. normalização dos pixels para o intervalo entre 0 e 1;
+10. transformação da matriz em um vetor de 784 atributos;
+11. classificação pelo modelo MLP.
+
+Ao final, são apresentados:
+
+- a imagem original selecionada;
+- a imagem processada no formato 28 × 28;
+- o dígito previsto;
+- a probabilidade máxima da previsão;
+- um gráfico com as probabilidades atribuídas às classes de 0 a 9.
+
+A funcionalidade pode ser executada rodando as ultimas celulas do notebook.
