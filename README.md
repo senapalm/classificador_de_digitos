@@ -4,6 +4,8 @@ Projeto de Machine Learning desenvolvido para classificação de dígitos manusc
 
 O projeto abrange análise exploratória, pré-processamento, treinamento e comparação de diferentes algoritmos de classificação, análise de erros, avaliação de robustez a dados fora da distribuição (OOD) e testes com imagens manuscritas produzidas fora do dataset original.
 
+Link para o video: https://youtu.be/B6xVEOiD8rQ
+
 ## Objetivo
 
 Desenvolver e avaliar modelos capazes de identificar dígitos manuscritos de 0 a 9 a partir de imagens de 28 × 28 pixels.
